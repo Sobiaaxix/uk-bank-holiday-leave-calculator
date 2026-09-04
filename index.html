@@ -17,6 +17,12 @@
     th { background:var(--navy); color:#fff; padding:10px 14px; text-align:left; }
     td { padding:10px 14px; border-bottom:1px solid var(--line); }
     tr:nth-child(even) td { background:#eef2f9; }
+    .card-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:16px; margin:1.5rem 0; }
+    .card { background:#fff; border:1px solid var(--line); border-radius:12px; padding:20px; }
+    .card h3 { color:var(--navy); margin:0 0 8px; font-size:1rem; }
+    .card p { margin:0; color:var(--muted); font-size:.95rem; }
+    .highlight { background:#fff; border-left:4px solid var(--red); padding:16px 20px; border-radius:0 8px 8px 0; margin:1.5rem 0; }
+    .highlight p { margin:0; }
     .links { display:flex; flex-wrap:wrap; gap:12px; margin:1.5rem 0; }
     .links a { background:var(--navy); color:#fff; padding:10px 18px; border-radius:8px; text-decoration:none; font-weight:700; font-size:.95rem; }
     .links a:hover { background:#001f63; }
@@ -28,23 +34,58 @@
   <div class="container">
     <p class="eyebrow">Free reference tool</p>
     <h1>UK Bank Holiday Leave Calculator</h1>
-    <p>A complete reference for UK bank holiday dates and annual leave entitlement across England, Wales, Scotland and Northern Ireland.</p>
+    <p>A complete reference for UK bank holiday dates and annual leave entitlement across England, Wales, Scotland and Northern Ireland. Use this guide to plan your 2026 leave around public holidays.</p>
 
     <h2>Bank Holiday Dates 2026</h2>
     <table>
-      <tr><th>Nation</th><th>Bank Holidays</th></tr>
-      <tr><td>England &amp; Wales</td><td>8</td></tr>
-      <tr><td>Scotland</td><td>9</td></tr>
-      <tr><td>Northern Ireland</td><td>10</td></tr>
+      <tr><th>Nation</th><th>Bank Holidays</th><th>Key Dates</th></tr>
+      <tr><td>England &amp; Wales</td><td>8</td><td>New Year's Day, Good Friday, Easter Monday, May bank holidays, Summer bank holiday, Christmas</td></tr>
+      <tr><td>Scotland</td><td>9</td><td>Includes 2 January and St Andrew's Day instead of Easter Monday</td></tr>
+      <tr><td>Northern Ireland</td><td>10</td><td>Includes St Patrick's Day and Battle of the Boyne</td></tr>
     </table>
 
     <h2>Do Bank Holidays Count as Annual Leave?</h2>
-    <p>It depends on your employment contract. All UK workers are entitled to 5.6 weeks paid leave per year under the Working Time Regulations 1998. Employers can include bank holidays within this allowance or give them on top.</p>
-    <p>For a full breakdown by nation and contract type, visit <a href="https://ukholidaysinfo.uk/do-bank-holidays-count-as-annual-leave-in-the-uk/">ukholidaysinfo.uk</a>.</p>
+    <div class="highlight">
+      <p>The short answer: it depends on your employment contract. There is no automatic right to take bank holidays off work in the UK.</p>
+    </div>
+    <p>All UK workers are entitled to 5.6 weeks (28 days) of paid annual leave per year under the Working Time Regulations 1998. Your employer can structure this in two ways:</p>
+
+    <div class="card-grid">
+      <div class="card">
+        <h3>Bank Holidays Included</h3>
+        <p>Your 28-day entitlement includes bank holidays. If there are 8 bank holidays, you have 20 days left to book freely.</p>
+      </div>
+      <div class="card">
+        <h3>Bank Holidays on Top</h3>
+        <p>You receive 28 days plus all bank holidays on top — giving you up to 38 days total in Northern Ireland.</p>
+      </div>
+      <div class="card">
+        <h3>Part-Time Workers</h3>
+        <p>Entitlement is calculated pro-rata. A 3-day week gives 16.8 days annual leave per year.</p>
+      </div>
+      <div class="card">
+        <h3>Zero-Hours Contracts</h3>
+        <p>You still accrue holiday pay at 12.07% of earnings if you have no fixed hours.</p>
+      </div>
+    </div>
+
+    <p>For a full breakdown by nation and contract type, visit <a href="https://ukholidaysinfo.uk/do-bank-holidays-count-as-annual-leave-in-the-uk/">Do Bank Holidays Count as Annual Leave?</a></p>
+
+    <h2>Long Weekend Opportunities 2026</h2>
+    <table>
+      <tr><th>Holiday</th><th>Date</th><th>Nation</th><th>Days Off with 1 AL Day</th></tr>
+      <tr><td>New Year</td><td>1 Jan</td><td>All</td><td>4 days</td></tr>
+      <tr><td>Easter</td><td>3–6 Apr</td><td>England &amp; Wales</td><td>9 days with 3 AL days</td></tr>
+      <tr><td>Early May</td><td>4 May</td><td>All</td><td>4 days</td></tr>
+      <tr><td>Spring</td><td>25 May</td><td>All</td><td>4 days</td></tr>
+      <tr><td>Summer</td><td>31 Aug</td><td>England &amp; Wales</td><td>4 days</td></tr>
+      <tr><td>Christmas</td><td>25–28 Dec</td><td>All</td><td>9 days with 3 AL days</td></tr>
+    </table>
 
     <h2>Related Tools</h2>
     <div class="links">
       <a href="https://ukholidaysinfo.uk">UK Holidays Info</a>
+      <a href="https://ukholidaysinfo.uk/do-bank-holidays-count-as-annual-leave-in-the-uk/">Annual Leave Guide</a>
       <a href="https://gitlab.com/sobiaaziz748/uk-bank-holiday-leave-planner">Leave Planner</a>
       <a href="https://uk-bank-holiday-leave-planner-ba19c2.gitlab.io">Live Planner Tool</a>
       <a href="https://ukholidaysinfo.bitbucket.io">Bitbucket Mirror</a>
