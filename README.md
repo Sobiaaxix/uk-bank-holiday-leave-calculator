@@ -41,6 +41,7 @@ Reference site: [ukholidaysinfo.uk](https://ukholidaysinfo.uk)
 - Holiday calendar: https://codeberg.org/steve789/uk-bank-holiday-calendar
 - Static guide: https://f005.backblazeb2.com/file/ukholidaysinfo/index.html
 - Bitbucket mirror: https://ukholidaysinfo.bitbucket.io
+- Netlify mirror: https://uk-bank-holiday-info.netlify.app
 
 ## License
 MIT
