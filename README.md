@@ -42,6 +42,7 @@ Reference site: [ukholidaysinfo.uk](https://ukholidaysinfo.uk)
 - Static guide: https://f005.backblazeb2.com/file/ukholidaysinfo/index.html
 - Bitbucket mirror: https://ukholidaysinfo.bitbucket.io
 - Netlify mirror: https://uk-bank-holiday-info.netlify.app
+- Cloudflare mirror: https://uk-bank-holiday-leave-calculator.sobiaaziz748.workers.dev
 
 ## License
 MIT
